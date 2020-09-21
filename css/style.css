@@ -1,0 +1,166 @@
+/*
+    公共样式文件
+*/
+@font-face{
+    font-family:"AdobeFanHeitiStd-Bold";
+    src: url('../font/AdobeFanHeitiStd-Bold_0.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+main{
+    max-width: 768px;
+    margin: 0 auto;
+    height: 100%;
+    margin-top:40px;
+    
+}
+header{
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    background: #535353;
+}
+section,.banner{
+    width: 95%;
+    margin: 0 auto;
+}
+.banner{
+    background: url('../images/globals/banner_background_1.png') no-repeat;
+    background-size: 100%;
+    height: 160px;
+    margin-top: 11pt;
+    background-size: 110% 110%;
+    background-position-x: -30px;
+}
+.banner_logo{
+    padding-top: 30px;
+}
+.IndexCenter{
+    width: 100%;
+}
+.IndexCenter ul{
+    display: flex;
+}
+.IndexCenter ul li{
+    width: 25%;
+    text-align: center;
+}
+.IndexCenter ul li img{
+    width: 54.67pt;
+    height: 55.67pt;
+}
+.newsul li{
+    border-bottom:1px solid gray;
+    height: 22.34pt;
+}
+/* 字体颜色 */
+.SizeColor{
+    color: #7d7b7b;
+    font-family: 'AdobeFanHeitiStd-Bold';
+    font-weight: 600;
+    font-size: 9.72pt;
+    line-height: 20px;
+}
+h3{
+    text-align: center;
+    font-family: 'AdobeFanHeitiStd-Bold';
+}
+.mainCenter{
+    background: url('../images/globals/background.png');
+    width: 100%;
+    background-size: 100% 100%;
+    height: 100%;
+    min-height: 500pt;
+    margin-bottom: 43.22px;
+}
+form{
+    width: 210pt;
+    margin: 0 auto;
+}
+.formDiv{
+    padding-top:84pt;
+}
+form div input{
+    width: 100%;
+    height: 38.81pt;
+    border-radius: 10px;
+    border: 1px solid #aab3b3;
+    padding-left:50px;
+    background-position: 10px  !important;
+    margin-bottom: 25.67pt;
+    background-size:10% 60% !important ;
+}
+article{
+    width:95pt;
+    height:36.67pt;
+    display: flex;
+    margin-top: 29.34pt;
+    font-family: 'AdobeFanHeitiStd-Bold';
+}
+article img{
+    padding: 10px 5px;
+}
+article span{
+    font-size: 14.18pt;
+    color: white;
+    line-height: 35pt;
+}
+button{
+    width: 100%;
+    height: 38.37pt;
+    border-radius: 10px;
+    font-family: 'AdobeFanHeitiStd-Bold';
+    border: 1px solid #aab3b3;
+    font-weight: bold;
+    background: #bfbfbf;
+    font-size: 18.87pt;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background: white;
+    width: 100%;
+    height: 32.42pt;
+    margin: 0 auto;
+}
+footer ul{
+    display: flex;
+}
+footer ul li{
+    text-align: center;
+    width: 50%;
+}
+.daishoufei{
+    position: relative;
+    top: -50px;
+    left: 20px;
+}
+.imgorder{
+    padding-left: 60pt;
+    padding-top: 10px;
+}
+@media screen and (min-width:770px){
+    main,header,footer{
+        width: 720px;
+    }
+    header,footer{
+        left: 50%;
+        margin-left: -360px;
+    }
+    main{
+        margin-top:0px;
+    }
+    .imgorder{
+        padding-left: 200pt;
+    }
+    .daishoufei{
+        left: 155px;
+    }
+   
+}

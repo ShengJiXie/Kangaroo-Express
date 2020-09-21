@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>袋鼠快运我的订单</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        h3 {
+            padding-top: 30px;
+            padding-left: 10px;
+            font-size: 23px;
+        }
+
+        .mainCenter ul {
+            width: 100%;
+            display: flex;
+        }
+
+        .mainCenter ul li {
+            width: 20%;
+            text-align: center;
+            height: 100%;
+            background-size: 100% 100% !important;
+            line-height: 38pt;
+        }
+
+        .mainCenter ul li:not(:nth-child(4)) {
+            margin-right: 5%;
+        }
+
+        .mainCenter ul li:nth-child(1) {
+            margin-left: 2%;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            padding: 5px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        thead:first-child() {
+            background: gray;
+        }
+
+        tr:nth-child(odd) {
+            background: rgb(158, 158, 158);
+        }
+
+        tr:nth-child(even) {
+            background: #b4b0b0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header   >
+            <div style="padding:2px 5px;float: left;">
+                <svg t="1598513235539" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" p-id="1137" width="25" height="25">
+                    <path
+                        d="M514 118.6c-217.6 0-394.6 176.9-394.6 394.6s177 394.5 394.6 394.5 394.6-176.9 394.6-394.6-177-394.5-394.6-394.5z m0 746.4c-194 0-351.8-157.8-351.8-351.8S320 161.4 514 161.4s351.8 157.8 351.8 351.8S708 865 514 865z"
+                        p-id="1138" fill="#ffffff"></path>
+                    <path
+                        d="M616.3 326l-30.2-30.2-154.7 154.7c-16.7 16.7-26 39-26 62.7 0 23.7 9.2 45.9 26 62.7l154.7 154.7 30.2-30.2-154.7-154.7c-8.7-8.7-13.5-20.2-13.5-32.5s4.8-23.8 13.5-32.5L616.3 326z"
+                        p-id="1139" fill="#ffffff"></path>
+                </svg>
+            </div>
+            <div style="padding:2px 5px; float: right;">
+                <img src="./images/globals/home_icon.png" alt="home" width="25" height="25">
+            </div>
+        </header>
+        <div class="banner" style="display: flex;">
+            <div class="banner_logo" style="width:30%;">
+                <img src="./images/globals/logo.png" alt="logo" width="100pt" height="42.67pt">
+                <h3>我的订单</h3>
+            </div>
+            <div class="banner_center" style="width:65%;text-align:right;padding-top:10px;">
+                <img src="./images/code.png" alt="code" width="150.67px" height="44px">
+                <div class="SizeColor" style="margin-top: 5.67pt;">
+                    <p>用户号码：12345 姓名：袋鼠快运</p>
+                    <p>电话：6833-3366</p>
+                    <p>积分：1200</p>
+                    <p>袋鼠币：0</p>
+                </div>
+            </div>
+        </div>
+        <img src="./images/globals/hr.png" alt="hr" width="100%">
+        <section>
+            <!-- 中间部分 -->
+            <div class="mainCenter">
+
+                <ul>
+                    <li style="background: url('./images/yellow.png') no-repeat;">
+                        <p>所有</p>
+                    </li>
+                    <li style="background: url('./images/zhuhai.png') no-repeat;">
+                        <p>珠海</p>
+                    </li>
+                    <li style="background: url('./images/aomen.png') no-repeat;">
+                        <p>澳门</p>
+                    </li>
+                    <li style="background: url('./images/yiqu.png') no-repeat;">
+                        <p>已取</p>
+                    </li>
+                </ul>
+                <div style="margin:10px auto;display:block;width: 90%;">
+                    <input type="text" placeholder="查找货单号"
+                        style="width:60%;border:1px solid #5F5F60;padding:5px;border-radius:15px;height:15.53pt; padding-right:40px;background:url('./images/search.png') no-repeat;background-size: 5% 80%;background-position: 98% 80%;">
+                    <span style="color: #FFAE00; font-family: 'AdobeFanHeitiStd-Bold';width:40%;">合计：$___</span>
+                </div>
+                <div style="width: 90%;margin:0 auto;">
+
+                    <p style="color:#959191;font-family: 'AdobeFanHeitiStd-Bold';">您最近三個月的訂單紀錄：</p>
+                </div>
+                <table>
+                    <tr>
+                        <th>位置</th>
+                        <th>单号</th>
+                        <th>日期</th>
+                        <th>费用</th>
+                    </tr>
+                    <tr>
+                        <td>澳门</td>
+                        <td>2020123456</td>
+                        <td>2020-08-29</td>
+                        <td>$29</td>
+                    </tr>
+                    <tr>
+                        <td>澳门</td>
+                        <td>2020123456</td>
+                        <td>2020-08-29</td>
+                        <td>$29</td>
+                    </tr>
+                </table>
+        </section>
+    </main>
+</body>
+
+</html>
